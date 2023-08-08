@@ -4,6 +4,7 @@ kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/st
 
 ## access ArgoCD UI
 kubectl get svc -n argocd
+
 kubectl port-forward svc/argocd-server 8080:443 -n argocd
 
 ## login with admin user and below token (as in documentation):
